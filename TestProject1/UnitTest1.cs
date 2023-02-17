@@ -13,14 +13,14 @@ namespace TestProject1
 
         public void Setup()
         {
-             analyaser = new MoodAnalyaser("I am in Sad mood"));
+             analyaser = new MoodAnalyaser(null);
         }
 
         [Test] 
 
         public void SadMessageReturnSAD()
         {
-            string expecxted = "SAD";
+            string expecxted = "HAPPY";
 
             string mood= analyaser.AnalyseMood();
 
